@@ -8,4 +8,4 @@ RUN apk add --no-cache --virtual .build-deps curl ca-certificates \
  && chmod +x /usr/bin/frps \
  && rm -rf /frp* frp*
 CMD /usr/bin/frps -p $PORT --dashboard_port 7500
-EXPOSE 7500
+EXPOSE $PORT 7500
