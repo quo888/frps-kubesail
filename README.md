@@ -11,4 +11,4 @@ Deployments 页面，应用 Frps 的 Network 选项卡中，80 端口（用于�
 因为自用，故没有设置连接用的密码（Token）。
 
 heroku
-https://dashboard.heroku.com/new?template=https://github.com/t66y100/frps-kubesail
+https://dashboard.heroku.com/new?template=https://github.com/quo888/frps-kubesail
