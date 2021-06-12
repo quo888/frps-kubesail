@@ -5,5 +5,5 @@ RUN apk add --no-cache --virtual .build-deps curl ca-certificates \
  && mv frp_0.31.2_linux_amd64/frps /usr/bin/frps \
  && chmod +x /usr/bin/frps \
  && rm -rf /frp* frp*
-CMD ["/usr/bin/frps", "--vhost_http_port=80"]
-EXPOSE 80 7000
+CMD ["/usr/bin/frps", "--vhost_http_port=8080"]
+EXPOSE 8080 7000
