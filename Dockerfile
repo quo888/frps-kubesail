@@ -7,5 +7,5 @@ RUN apk add --no-cache --virtual .build-deps curl ca-certificates \
  && mv frp_0.37.0_linux_amd64/frps.ini /usr/bin/frps.ini \
  && chmod +x /usr/bin/frps \
  && rm -rf /frp* frp*
-CMD /usr/bin/frps --dashboard_port $PORT
-EXPOSE $PORT 7000
+CMD /usr/bin/frps -p $PORT
+EXPOSE $PORT
